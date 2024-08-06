@@ -57,7 +57,8 @@ categorical_columns = [field for (field, dataType) in data.dtypes if dataType ==
 
 data_desc = data.describe()
 log = f'Data Description:\n{data_desc}'
-print(log)
+print('Data Description:\n')
+data_desc.show()
 output_log.append(log)
 
 # Index Catagorical columns to get correlation matrix
