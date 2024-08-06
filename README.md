@@ -1,7 +1,7 @@
 # Network Intrusion Detection
 Perform and evaluate Binary and Multi-Class Classification on the dataset: https://www.kaggle.com/datasets/aryashah2k/nfuqnidsv2-network-intrusion-detection-dataset/code
 
-# Steps to run on Google Cloud
+## Steps to run on Google Cloud
 1. Upload the [dataset](https://drive.google.com/file/d/1Rru_t3Sgl415XyhKbu9iRvLl4-xTcXQQ/view?usp=sharing) to your bucket.
 2. Create a folder for storing the outputs.
 3. Upload the python-scripts to the bucket.
@@ -12,7 +12,7 @@ Perform and evaluate Binary and Multi-Class Classification on the dataset: https
    Note: This run takes about 8 hours because of the size of the dataset.
 7. Once the job is complete submit another job with the script `project_evaluating_models.py` and the same arguments as before.
 
-# Steps to generate a sample of dataset
+## Steps to generate a sample of dataset
 1. Open [ipynbs/generate_small_data.ipynb](https://github.com/deepali17043/NetworkIntrusionDetection/blob/main/ipynbs/generate_small_data.ipynb)
 2. Update the sample fraction
 3. Run the cells up to the cell `spark.stop()`
