@@ -1,0 +1,7 @@
+Test areaUnderROC - with standard RF model: 0.9914019644756271
+Test areaUnderROC - with tuned RF model (using 3-fold CrossValidation): 0.9936974612434498
+Best Model for binary classification saved to project_output_dir/best_model_binary
+Multi-class classification - Attack type - starting
+Test Accuracy - with standard RF model: 0.894705179659502
+Test Accuracy - with tuned RF model (using 3-fold CrossValidation): 0.894705179659502
+Best Model for multi-class classification saved to project_output_dir/best_model_multiclass

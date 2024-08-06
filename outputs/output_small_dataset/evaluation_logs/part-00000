@@ -1,0 +1,57 @@
+Data Read successful, schema infered:
+StructType([StructField('IPV4_SRC_ADDR', StringType(), True), StructField('L4_SRC_PORT', IntegerType(), True), StructField('IPV4_DST_ADDR', StringType(), True), StructField('L4_DST_PORT', IntegerType(), True), StructField('PROTOCOL', IntegerType(), True), StructField('L7_PROTO', DoubleType(), True), StructField('IN_BYTES', IntegerType(), True), StructField('IN_PKTS', IntegerType(), True), StructField('OUT_BYTES', IntegerType(), True), StructField('OUT_PKTS', IntegerType(), True), StructField('TCP_FLAGS', IntegerType(), True), StructField('CLIENT_TCP_FLAGS', IntegerType(), True), StructField('SERVER_TCP_FLAGS', IntegerType(), True), StructField('FLOW_DURATION_MILLISECONDS', IntegerType(), True), StructField('DURATION_IN', IntegerType(), True), StructField('DURATION_OUT', IntegerType(), True), StructField('MIN_TTL', IntegerType(), True), StructField('MAX_TTL', IntegerType(), True), StructField('LONGEST_FLOW_PKT', IntegerType(), True), StructField('SHORTEST_FLOW_PKT', IntegerType(), True), StructField('MIN_IP_PKT_LEN', IntegerType(), True), StructField('MAX_IP_PKT_LEN', IntegerType(), True), StructField('SRC_TO_DST_SECOND_BYTES', DoubleType(), True), StructField('DST_TO_SRC_SECOND_BYTES', DoubleType(), True), StructField('RETRANSMITTED_IN_BYTES', IntegerType(), True), StructField('RETRANSMITTED_IN_PKTS', IntegerType(), True), StructField('RETRANSMITTED_OUT_BYTES', IntegerType(), True), StructField('RETRANSMITTED_OUT_PKTS', IntegerType(), True), StructField('SRC_TO_DST_AVG_THROUGHPUT', LongType(), True), StructField('DST_TO_SRC_AVG_THROUGHPUT', LongType(), True), StructField('NUM_PKTS_UP_TO_128_BYTES', IntegerType(), True), StructField('NUM_PKTS_128_TO_256_BYTES', IntegerType(), True), StructField('NUM_PKTS_256_TO_512_BYTES', IntegerType(), True), StructField('NUM_PKTS_512_TO_1024_BYTES', IntegerType(), True), StructField('NUM_PKTS_1024_TO_1514_BYTES', IntegerType(), True), StructField('TCP_WIN_MAX_IN', IntegerType(), True), StructField('TCP_WIN_MAX_OUT', IntegerType(), True), StructField('ICMP_TYPE', IntegerType(), True), StructField('ICMP_IPV4_TYPE', IntegerType(), True), StructField('DNS_QUERY_ID', IntegerType(), True), StructField('DNS_QUERY_TYPE', IntegerType(), True), StructField('DNS_TTL_ANSWER', IntegerType(), True), StructField('FTP_COMMAND_RET_CODE', DoubleType(), True), StructField('Label', IntegerType(), True), StructField('Attack', StringType(), True), StructField('Dataset', StringType(), True)])
+Data Description:
+DataFrame[summary: string, IPV4_SRC_ADDR: string, L4_SRC_PORT: string, IPV4_DST_ADDR: string, L4_DST_PORT: string, PROTOCOL: string, L7_PROTO: string, IN_BYTES: string, IN_PKTS: string, OUT_BYTES: string, OUT_PKTS: string, TCP_FLAGS: string, CLIENT_TCP_FLAGS: string, SERVER_TCP_FLAGS: string, FLOW_DURATION_MILLISECONDS: string, DURATION_IN: string, DURATION_OUT: string, MIN_TTL: string, MAX_TTL: string, LONGEST_FLOW_PKT: string, SHORTEST_FLOW_PKT: string, MIN_IP_PKT_LEN: string, MAX_IP_PKT_LEN: string, SRC_TO_DST_SECOND_BYTES: string, DST_TO_SRC_SECOND_BYTES: string, RETRANSMITTED_IN_BYTES: string, RETRANSMITTED_IN_PKTS: string, RETRANSMITTED_OUT_BYTES: string, RETRANSMITTED_OUT_PKTS: string, SRC_TO_DST_AVG_THROUGHPUT: string, DST_TO_SRC_AVG_THROUGHPUT: string, NUM_PKTS_UP_TO_128_BYTES: string, NUM_PKTS_128_TO_256_BYTES: string, NUM_PKTS_256_TO_512_BYTES: string, NUM_PKTS_512_TO_1024_BYTES: string, NUM_PKTS_1024_TO_1514_BYTES: string, TCP_WIN_MAX_IN: string, TCP_WIN_MAX_OUT: string, ICMP_TYPE: string, ICMP_IPV4_TYPE: string, DNS_QUERY_ID: string, DNS_QUERY_TYPE: string, DNS_TTL_ANSWER: string, FTP_COMMAND_RET_CODE: string, Label: string, Attack: string]
+Data Schema after indexing and encoding:
+StructType([StructField('L4_SRC_PORT', IntegerType(), True), StructField('L4_DST_PORT', IntegerType(), True), StructField('PROTOCOL', IntegerType(), True), StructField('L7_PROTO', DoubleType(), True), StructField('IN_BYTES', IntegerType(), True), StructField('IN_PKTS', IntegerType(), True), StructField('OUT_BYTES', IntegerType(), True), StructField('OUT_PKTS', IntegerType(), True), StructField('TCP_FLAGS', IntegerType(), True), StructField('CLIENT_TCP_FLAGS', IntegerType(), True), StructField('SERVER_TCP_FLAGS', IntegerType(), True), StructField('FLOW_DURATION_MILLISECONDS', IntegerType(), True), StructField('DURATION_IN', IntegerType(), True), StructField('DURATION_OUT', IntegerType(), True), StructField('MIN_TTL', IntegerType(), True), StructField('MAX_TTL', IntegerType(), True), StructField('LONGEST_FLOW_PKT', IntegerType(), True), StructField('SHORTEST_FLOW_PKT', IntegerType(), True), StructField('MIN_IP_PKT_LEN', IntegerType(), True), StructField('MAX_IP_PKT_LEN', IntegerType(), True), StructField('SRC_TO_DST_SECOND_BYTES', DoubleType(), True), StructField('DST_TO_SRC_SECOND_BYTES', DoubleType(), True), StructField('RETRANSMITTED_IN_BYTES', IntegerType(), True), StructField('RETRANSMITTED_IN_PKTS', IntegerType(), True), StructField('RETRANSMITTED_OUT_BYTES', IntegerType(), True), StructField('RETRANSMITTED_OUT_PKTS', IntegerType(), True), StructField('SRC_TO_DST_AVG_THROUGHPUT', LongType(), True), StructField('DST_TO_SRC_AVG_THROUGHPUT', LongType(), True), StructField('NUM_PKTS_UP_TO_128_BYTES', IntegerType(), True), StructField('NUM_PKTS_128_TO_256_BYTES', IntegerType(), True), StructField('NUM_PKTS_256_TO_512_BYTES', IntegerType(), True), StructField('NUM_PKTS_512_TO_1024_BYTES', IntegerType(), True), StructField('NUM_PKTS_1024_TO_1514_BYTES', IntegerType(), True), StructField('TCP_WIN_MAX_IN', IntegerType(), True), StructField('TCP_WIN_MAX_OUT', IntegerType(), True), StructField('ICMP_TYPE', IntegerType(), True), StructField('ICMP_IPV4_TYPE', IntegerType(), True), StructField('DNS_QUERY_ID', IntegerType(), True), StructField('DNS_QUERY_TYPE', IntegerType(), True), StructField('DNS_TTL_ANSWER', IntegerType(), True), StructField('FTP_COMMAND_RET_CODE', DoubleType(), True), StructField('Label', IntegerType(), True), StructField('Attack_index', DoubleType(), False), StructField('IPV4_SRC_ADDR_encoded', VectorUDT(), True), StructField('IPV4_DST_ADDR_encoded', VectorUDT(), True)])
+Preprocessing complete
+Data Splits created
+Binary Classification - Attack (1) or not (0) - starting
+Loading saved model...
+Best Model for binary classification loaded from project_output_dir/best_model_binary
+Feature importances:
+DURATION_IN: 0.14657789588095893
+L7_PROTO: 0.11765263208289697
+FLOW_DURATION_MILLISECONDS: 0.11424629142653457
+L4_DST_PORT: 0.07595447211449416
+DST_TO_SRC_SECOND_BYTES: 0.06460483827146225
+MAX_TTL: 0.05378901108124499
+SRC_TO_DST_SECOND_BYTES: 0.043696263836712414
+TCP_WIN_MAX_IN: 0.04128242619369633
+MIN_TTL: 0.03572678026950683
+MIN_IP_PKT_LEN: 0.03292065434668193
+OUT_BYTES: 0.02947619935959515
+MAX_IP_PKT_LEN: 0.02764452140108603
+DNS_QUERY_TYPE: 0.027259140600857667
+LONGEST_FLOW_PKT: 0.025279986201862864
+DNS_TTL_ANSWER: 0.021351132183223744
+OUT_PKTS: 0.018544220458133826
+CLIENT_TCP_FLAGS: 0.016777840202903148
+TCP_WIN_MAX_OUT: 0.014794074913660036
+SHORTEST_FLOW_PKT: 0.013668041705127768
+L4_SRC_PORT: 0.013523288741305466
+IN_BYTES: 0.012582713386226097
+DNS_QUERY_ID: 0.012034251514953447
+NUM_PKTS_UP_TO_128_BYTES: 0.009240722399647981
+IN_PKTS: 0.00884596582420533
+RETRANSMITTED_IN_PKTS: 0.00558232593363075
+TCP_FLAGS: 0.0038690689481156934
+ICMP_IPV4_TYPE: 0.0032523729860650026
+DURATION_OUT: 0.002903345092944041
+NUM_PKTS_128_TO_256_BYTES: 0.0023529090667041754
+NUM_PKTS_1024_TO_1514_BYTES: 0.0016460662063407002
+SERVER_TCP_FLAGS: 0.0013418086471536984
+RETRANSMITTED_OUT_PKTS: 0.0005901625734323855
+PROTOCOL: 0.0004064977859251655
+RETRANSMITTED_IN_BYTES: 0.0003451735730742758
+NUM_PKTS_512_TO_1024_BYTES: 0.00014263799638999407
+ICMP_TYPE: 5.420186213126269e-05
+NUM_PKTS_256_TO_512_BYTES: 4.006493111494633e-05
+RETRANSMITTED_OUT_BYTES: 0.0
+FTP_COMMAND_RET_CODE: 0.0
+Confusion Matrix:
+[[37131.  1071.]
+ [ 3842. 74315.]]
+False Positive Rate: 0.0491574651022941
+True Positive Rate: 0.971964818595885
+Precision: 0.9857931180855862

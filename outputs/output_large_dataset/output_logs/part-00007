@@ -1,0 +1,2 @@
+Test Accuracy - with tuned RF model (using 3-fold CrossValidation): 0.8808300106556726
+Best Model for multi-class classification saved to gs://dee-cs777-bucket-1/datafolder/project_output_dir/best_model_multi
