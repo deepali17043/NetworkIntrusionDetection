@@ -5,7 +5,7 @@ Perform and evaluate Binary and Multi-Class Classification on the dataset: https
 1. Upload the [dataset](https://drive.google.com/file/d/1Rru_t3Sgl415XyhKbu9iRvLl4-xTcXQQ/view?usp=sharing) to your bucket.
 2. Create a folder for storing the outputs.
 3. Upload the python-scripts to the bucket.
-4. Create a cluster with the following configuration: ![cluster_config.png](https://github.com/deepali17043/NetworkIntrusionDetection/tree/main/images)
+4. Create a cluster with the following configuration: ![cluster_config.png](https://github.com/deepali17043/NetworkIntrusionDetection/blob/main/images/cluster_config.png)
 5. Submit a job with the python-script `project.py` and arguments:  
    i. gs link for dataset  
    ii. gs link for folder you created in step 2  
